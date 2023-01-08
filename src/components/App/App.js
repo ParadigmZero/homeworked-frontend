@@ -1,14 +1,33 @@
-import css from "./App.module.css";
-import AppContent from "../AppContent";
+import HomeworkViewer from "../HomeworkViewer";
+import MyClassroom from "../MyClassroom";
+import HomeWorkFeed from "../HomeWorkFeed";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Header from "../Header";
+import DropDown from "../DropDown";
+import useFetch from "../../hooks/useFetch";
 
 function App() {
+  useFetch();
 
   return (
-    <div className={css.wrapper}>
-      <AppContent />
-    </div>
+    <>
+      <Router>
+        <Header />
+        <DropDown />
+        <Switch>
+          <Route path="/homeworkViewer">
+            <HomeworkViewer />
+          </Route>
+          <Route path="/classroom">
+            <MyClassroom />
+          </Route>
+          <Route path="/">
+            <HomeWorkFeed />
+          </Route>
+        </Switch>
+      </Router>
+    </>
   );
-
 }
 
 export default App;

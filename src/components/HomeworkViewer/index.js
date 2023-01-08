@@ -13,7 +13,7 @@ function HomeworkViewer() {
 
   const saveableCanvas = useRef(`canvasRef`);
   const history = useHistory();
-  const navigateBack = () => history.push("/myClassroom");
+  const navigateBack = () => history.push("/classroom");
 
   let homework = state.homework[state.homeworkIndex];
   let childHomework =
