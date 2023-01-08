@@ -25,12 +25,12 @@
 }
 
 a {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
 .iconButton svg {
-  fill: white;
+  fill: rgb(0, 0, 0);
   width: 20px;
   height: 20px;
 }

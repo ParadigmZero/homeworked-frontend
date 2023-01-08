@@ -14,13 +14,13 @@
   margin: 15px 15px;
   border: 1px solid;
   padding: 25px;
-  box-shadow: 2px 2px 5px 2px #69779b;
+  box-shadow: 2px 2px 5px 2px #9b6969;
   border-radius: 15px 50px;
   border-color: rgb(207, 203, 203);
 }
 
 .listElement:hover {
-  box-shadow: 2px 2px 5px #acdbdf;
+  box-shadow: 2px 2px 5px #dfafac;
 }
 
 .listElementDisabled {
@@ -30,7 +30,7 @@
   margin: 15px 15px;
   border: 1px solid;
   padding: 25px;
-  box-shadow: 2px 2px 5px 2px #69779b;
+  box-shadow: 2px 2px 5px 2px #131212;
   border-radius: 15px 50px;
   border-color: rgb(207, 203, 203);
 }
@@ -50,7 +50,7 @@
     margin: 15px 15px;
     border: 1px solid;
     padding: 25px;
-    box-shadow: 2px 2px 5px 2px #69779b;
+    box-shadow: 2px 2px 5px 2px #593c3c;
     border-radius: 15px 50px;
     border-color: rgb(207, 203, 203);
   }
@@ -62,7 +62,7 @@
     margin: 15px 15px;
     border: 1px solid;
     padding: 25px;
-    box-shadow: 2px 2px 5px 2px #69779b;
+    box-shadow: 2px 2px 5px 2px #140c0c;
     border-radius: 15px 50px;
     border-color: rgb(207, 203, 203);
   }

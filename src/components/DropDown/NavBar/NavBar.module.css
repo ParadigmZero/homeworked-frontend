@@ -4,6 +4,8 @@
   padding: 0 1rem;
   border-bottom: 1px solid white;
   position: fixed;
+  align-items: center;
+  align-content: center;
   width: 100%;
   z-index: 300;
 }
@@ -12,8 +14,10 @@
 .navbarNav {
   max-width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: flex-end;
+  /* display: flex; */
+  position: fixed;
+  align-items: center;
+  align-content: center;
 }
 
 ul {
