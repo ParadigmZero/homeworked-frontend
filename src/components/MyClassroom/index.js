@@ -22,7 +22,7 @@ function MyClassroom() {
 
   return (
     <>
-      <h1 className={css.pageTitle}>My Classroom - {homeworkTitle}</h1>
+      <h1 className={css.pageTitle}>{homeworkTitle}</h1>
       <div>
         <ul className={css.myClassroom}>
           {children.map((child, index) => [

@@ -1,5 +1,5 @@
 import css from "./Header.module.css";
-import logo from "../../assets/LogoApp.gif";
+import logo from "../../assets/HomeWorkedLogo.png";
 import { useHistory } from "react-router-dom";
 
 function Header() {

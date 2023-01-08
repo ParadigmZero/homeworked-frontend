@@ -17,8 +17,8 @@ body {
   top: 160px;
   width: 12%;
   transform: translateX(8%);
-  background-color: #d7eaea;
-  border: 1px solid #d7eaea;
+  background-color: #eadcd7;
+  border: 1px solid #eae2d7;
   border-radius: 8px;
   padding: 0.5rem;
   overflow: hidden;
@@ -48,6 +48,7 @@ body {
   transform: translateX(0%);
   transition: all 500ms ease;
 }
+
 :global .menu-primary2-exit {
   position: absolute;
 }

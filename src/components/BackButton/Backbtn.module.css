@@ -2,10 +2,10 @@
   position: fixed;
   top: 165px;
   left: 20px;
-  background-color: #d7eaea;
-  box-shadow: 0px 10px 14px -7px #d7eaea;
+  background-color: #eadbd7;
+  box-shadow: 0px 10px 14px -7px #ead8d7;
   border-radius: 8px;
-  border: 2px solid #d7eaea;
+  border: 2px solid #eadbd7;
   /* display:inline-block; */
   cursor: pointer;
   color: rgb(66, 66, 66);
@@ -14,11 +14,11 @@
   font-weight: bold;
   padding: 5px 15px;
   text-decoration: none;
-  text-shadow: 0px 1px 0px #acdbdf;
+  text-shadow: 0px 1px 0px #dfafac;
   outline: none;
 }
 
 .goBack:hover {
-  background: linear-gradient(to bottom, #acdbdf 5%, #d7eaea 100%);
-  background-color: #acdbdf;
+  background: linear-gradient(to bottom, #dfacac 5%, #ead7d7 100%);
+  background-color: #dfacac;
 }
