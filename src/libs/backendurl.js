@@ -1,1 +1,1 @@
-export const backendurl = "https://homeworked.up.railway.app/homework/";
+export const backendurl = "https://localhost:7012/Homework/";
