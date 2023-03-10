@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { uploadFile as uploadToS3 } from "react-s3";
 import css from "../Upload/Upload.module.css";
 import { UseAppContext } from "../../appContext";
 import { config } from "../../libs/config";
@@ -17,26 +16,7 @@ const Upload = ({ hideModal }) => {
     setSelectedFile(event.target.files[0]);
   };
 
-  // S3 Upload
-  const OldUploadClick = () => {
-    config.dirName = `homework/${Date.now()}`;
-    // S3 upload method
-    uploadToS3(selectedFile, config)
-      .then(() => {
-        // if successful uploading to AWS S3 then insert into SQL homework database
-        uploadToSQL({
-          name: title,
-          image: `https://${config.bucketName}.s3.${config.region}.amazonaws.com/${config.dirName}/${selectedFile.name}`,
-          datedue: dateDue,
-          comment: comment,
-        });
-      })
-      .catch((err) => {
-        alert(err);
-      });
-    setRefreshSwitch(!refreshSwitch);
-    hideModal();
-  };
+
 
 
   async function uploadClick() {
