@@ -4,7 +4,6 @@ import DropdownTerm from "../SideFilter";
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { UseAppContext } from "../../appContext";
-import ResetButton from "./ResetButton";
 import Greeting from "./Greeting";
 import * as actions from "../../libs/actions";
 
@@ -32,7 +31,6 @@ const HomeWorkFeed = () => {
     <div>
       <Greeting />
       <DropdownTerm handleClick={changeFilter} />
-      <div><ResetButton setFilter1={setFilter1} setFilter2={setFilter2} /></div>
       <ul className={css.post}>
         {homeworkList
           .map((homework, index) => [
