@@ -30,14 +30,14 @@ const Upload = ({ hideModal }) => {
       Body: selectedFile,
     }).promise();
 
-    uploadToSQL(uploadedImage.Location);
+    postToSQL(uploadedImage.Location);
   
     setRefreshSwitch(!refreshSwitch);
     hideModal();
   };
 
   // Upload to SQL...
-  async function uploadToSQL(url) {
+  async function postToSQL(url) {
     // Create our object to POST (Insert) into Homework on SQL
     const homework = {
       name: title,
@@ -46,11 +46,10 @@ const Upload = ({ hideModal }) => {
       comment: comment,
     };
     // Make the POST request (INSERT)
-    postHomework("POST", homework);
+    await postHomework("POST", homework);
   }
 
   async function postHomework(method, body) {
-    // const res =
     await fetch(backendurl, {
       method,
       headers: { "content-type": "application/json" },
