@@ -3,7 +3,6 @@ import css from "./HomeworkViewer.module.css";
 import { UseAppContext } from "../../appContext";
 import { useHistory } from "react-router-dom";
 import CanvasTools from "./CanvasTools";
-import BackButton from "../BackButton";
 import { backendurl } from "../../libs/backendurl";
 
 function HomeworkViewer() {
@@ -79,7 +78,7 @@ function HomeworkViewer() {
           <p className={css.childName}>
             <img src={childHomework.avatar} alt="avatar" />{" "}
           </p>
-          <p onClick={navigateBack}>Homework: {homework.name}</p>
+          <p onClick={navigateBack}>← Homework: {homework.name}</p>
         </div>
       </div>
       <div className={css.canvasAndColors}>
@@ -88,7 +87,6 @@ function HomeworkViewer() {
           saveableCanvas={saveableCanvas}
         />
         <div>
-          <BackButton navigateBack={navigateBack} />
           <div className={css.contain}>
             Set: {homework.dateset}
             <br />
