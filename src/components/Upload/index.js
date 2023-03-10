@@ -88,7 +88,7 @@ const Upload = ({ hideModal }) => {
       <br />
       <input type="file" name="file" onChange={browseClick} title="" />
       <br />
-      <button className={css.submitBtn} onClick={uploadClick}>
+      <button onClick={uploadClick} disabled={(selectedFile === undefined)||(title.length < 1)}>
         Submit
       </button>
     </div>
