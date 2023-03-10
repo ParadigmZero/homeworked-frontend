@@ -79,7 +79,7 @@ function HomeworkViewer() {
           <p className={css.childName}>
             <img src={childHomework.avatar} alt="avatar" />{" "}
           </p>
-          <p>Homework: {homework.name}</p>
+          <p onClick={navigateBack}>Homework: {homework.name}</p>
         </div>
       </div>
       <div className={css.canvasAndColors}>
