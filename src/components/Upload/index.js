@@ -2,7 +2,7 @@ import { useState } from "react";
 import { uploadFile as uploadToS3 } from "react-s3";
 import css from "../Upload/Upload.module.css";
 import { UseAppContext } from "../../appContext";
-import { config } from "../../libs/configS3";
+import { config } from "../../libs/config";
 import { backendurl } from "../../libs/backendurl";
 
 const Upload = ({ hideModal }) => {
@@ -11,14 +11,14 @@ const Upload = ({ hideModal }) => {
   const [comment, setComment] = useState("");
   const [dateDue, setDateDue] = useState("");
 
-  const { refreshSwitch, setRefreshSwitch } = UseAppContext();
+  const { refreshSwitch, setRefreshSwitch, s3 } = UseAppContext();
 
   const browseClick = (event) => {
     setSelectedFile(event.target.files[0]);
   };
 
   // S3 Upload
-  const uploadClick = () => {
+  const OldUploadClick = () => {
     config.dirName = `homework/${Date.now()}`;
     // S3 upload method
     uploadToS3(selectedFile, config)
@@ -38,12 +38,30 @@ const Upload = ({ hideModal }) => {
     hideModal();
   };
 
+
+  async function uploadClick() {
+    config.dirName = `homework/${Date.now()}`;
+
+    const uploadedImage = await s3.upload({
+      Bucket: config.bucketName,
+      ContentType: selectedFile.type,
+      ACL: 'public-read',
+      Key: selectedFile.name,
+      Body: selectedFile,
+    }).promise();
+
+    uploadToSQL(uploadedImage.Location);
+  
+    setRefreshSwitch(!refreshSwitch);
+    hideModal();
+  };
+
   // Upload to SQL...
-  async function uploadToSQL() {
+  async function uploadToSQL(url) {
     // Create our object to POST (Insert) into Homework on SQL
     const homework = {
       name: title,
-      image: `https://${config.bucketName}.s3.${config.region}.amazonaws.com/${config.dirName}/${selectedFile.name}`,
+      image: url,
       datedue: dateDue,
       comment: comment,
     };
