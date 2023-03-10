@@ -1,22 +1,14 @@
-# README in progress
+# Setup
 
-# Packages used
+Node and npm must be installed. Run the following in the root directory of this project.
 
-```
-npm install --save react-s3  
-npm install --save react-modal-hook
-npm i catenary-curve
-npm i react-canvas-draw
-npm i react-bootstrap
-npm install -S react-router-bootstrap
-npm i semantic-ui-react
-npm i use-callback-ref
-npm i react-transition-group
-npm install react-onclickoutside --save
-npm i @material-ui/core
-npm install --save react-modal
-npm install --save react-modal-hook
-```
+`npm i`
+
+## Running
+
+`npm start`
+
+## Data structures
 
 # homework object
 
@@ -49,13 +41,7 @@ Example:
 ```
 # Backend
 
-Connecting to a remote Heroku deployment of the backend. Note, this slows down data retrieval somewhat.
-
-The URL is below:
-
-< TO ENTER >
-
-The code for the backend is found at:
+The backend can be found at.
 
 https://github.com/ParadigmZero/HomeWorkedBackend
 
@@ -68,8 +54,6 @@ These relate to an Amazon AWS S3 bucket. For security reasons these cannot be gi
 (Place them after the = sign )
 
 ```
-REACT_APP_domainId=
-REACT_APP_clientCode=
 REACT_APP_BUCKETNAME=
 REACT_APP_REGION=
 REACT_APP_ACCESS_KEY_ID=
