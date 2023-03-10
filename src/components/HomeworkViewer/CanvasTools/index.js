@@ -3,7 +3,7 @@ import CanvasDraw from "react-canvas-draw";
 import css from "./CanvasTools.module.css";
 
 function CanvasTools({ childHomework, saveableCanvas }) {
-  const [customColor, setCustomColor] = useState("blue");
+  const [customColor, setCustomColor] = useState("#66ff00");
 
   function handleClear() {
     saveableCanvas.current.clear();

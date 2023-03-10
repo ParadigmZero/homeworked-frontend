@@ -21,7 +21,7 @@ function HomeworkViewer() {
   //load homework annotation if it is there
   useEffect(() => {
     if (childHomework.annotation != null) {
-      saveableCanvas.current.loadSaveData(childHomework.annotation, false);
+      saveableCanvas.current.loadSaveData(childHomework.annotation,false);
       setComment(childHomework.comment);
     }
   }, [state.childIndex]);
