@@ -49,7 +49,7 @@ https://github.com/ParadigmZero/HomeWorkedBackend
 
 You will need to input the following environmental variables into a .env file ( root directory).
 
-These relate to an Amazon AWS S3 bucket. For security reasons these cannot be given.
+These relate to an Amazon AWS S3 bucket. For security reasons these cannot be given, and you will need to create your own.
 
 (Place them after the = sign )
 
