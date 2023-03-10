@@ -94,6 +94,12 @@ function DropdownTerm({ handleClick }) {
           >
             <span className={css.filter}>Summer Pt II</span>
           </DropdownItem>
+          <DropdownItem
+            handleClick={() => handleClick("", "")}
+            leftIcon=""
+          >
+            <span className={css.filter}>Clear</span>
+          </DropdownItem>
         </div>
       </CSSTransition>
     </div>

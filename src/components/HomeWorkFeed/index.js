@@ -32,7 +32,7 @@ const HomeWorkFeed = () => {
     <div>
       <Greeting />
       <DropdownTerm handleClick={changeFilter} />
-      <ResetButton setFilter1={setFilter1} setFilter2={setFilter2} />
+      <div><ResetButton setFilter1={setFilter1} setFilter2={setFilter2} /></div>
       <ul className={css.post}>
         {homeworkList
           .map((homework, index) => [
