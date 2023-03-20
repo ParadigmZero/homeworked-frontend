@@ -26,7 +26,7 @@ const Upload = ({ hideModal }) => {
       Bucket: config.bucketName,
       ContentType: selectedFile.type,
       ACL: 'public-read',
-      Key: selectedFile.name,
+      Key: `${config.dirName}/${selectedFile.name}`,
       Body: selectedFile,
     }).promise();
 
