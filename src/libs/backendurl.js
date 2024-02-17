@@ -1,1 +1,1 @@
-export const backendurl = "https://localhost:7012/Homework/";
+export const backendurl = process.env.BACKEND_URL ? process.env.BACKEND_URL : "https://localhost:7012/Homework/";

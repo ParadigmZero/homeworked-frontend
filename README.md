@@ -6,9 +6,17 @@ To be run in conjunction with the backend. Found here:
 
 # Setup
 
-Node and npm must be installed. Run the following in the root directory of this project.
+Node and npm must be installed. 
 
-`npm i`
+Recommend to use Node Version Manager (nvm) then in this directory enter:
+
+`nvm use`
+
+Which will install a version of Node confirmed to work with this project.
+
+Then install node modules .etc:
+
+`npm i --legacy-peer-deps`
 
 ## Running
 
