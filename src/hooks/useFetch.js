@@ -14,10 +14,13 @@ function useFetch() {
       console.log(data);
 
       let altDate;
+      let altDateDue;
 
       for (let i = 0; i < data.length; i++) {
         altDate = new Date(Date.parse(data[i].dateset));
         data[i].dateset = dateFormat(altDate.toJSON(), "mmmm dS, yyyy");
+        altDateDue = new Date(Date.parse(data[i].datedue)); 
+        data[i].datedue = dateFormat(altDateDue.toJSON(), "mmmm dS, yyyy");
       }
       dispatch({ type: actions.FETCH, payload: data });
     }
