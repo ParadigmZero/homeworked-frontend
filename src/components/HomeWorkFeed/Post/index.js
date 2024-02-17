@@ -21,7 +21,7 @@ const Post = ({ homework, index, clickToClassroom }) => {
           <span>Comment: {homework.comment}</span>
         </p>
         <p className={css.dateSet}>
-          <span>Date Due:</span> {homework.datedue}
+          <span>Date Due:</span> {homework.dateDue}
         </p>
       </div>
     </div>

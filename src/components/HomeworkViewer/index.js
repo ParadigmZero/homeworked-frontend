@@ -90,7 +90,7 @@ function HomeworkViewer() {
           <div className={css.contain}>
             Set: {homework.dateset}
             <br />
-            Due: {homework.datedue}
+            Due: {homework.dateDue}
             <br />
             <span>Comment: </span>
             <input

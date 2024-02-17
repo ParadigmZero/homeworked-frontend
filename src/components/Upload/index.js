@@ -42,7 +42,7 @@ const Upload = ({ hideModal }) => {
     const homework = {
       name: title,
       image: url,
-      datedue: dateDue,
+      dateDue: dateDue,
       comment: comment,
     };
     // Make the POST request (INSERT)
