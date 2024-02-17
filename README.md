@@ -1,3 +1,9 @@
+Frontend for HomeWorked, an example school homework marking system, as seen from a teachers view.
+
+To be run in conjunction with the backend. Found here:
+
+<https://github.com/ParadigmZero/HomeWorkedBackend>
+
 # Setup
 
 Node and npm must be installed. Run the following in the root directory of this project.
