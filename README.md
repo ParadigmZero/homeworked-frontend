@@ -2,7 +2,7 @@ Frontend for HomeWorked, an example school homework marking system, as seen from
 
 To be run in conjunction with the backend. Found here:
 
-<https://github.com/ParadigmZero/HomeWorkedBackend>
+<https://github.com/ParadigmZero/homeworked-backend>
 
 # Setup
 
@@ -53,11 +53,6 @@ Example:
     comment: null
 }
 ```
-# Backend
-
-The backend can be found at.
-
-https://github.com/ParadigmZero/HomeWorkedBackend
 
 # Environmental variables for AWS S3 upload
 
